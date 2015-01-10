@@ -1,0 +1,54 @@
+GIt commands for this course
+
+git log
+
+git log --stat
+
+git clone -> to copy an entire repository from one computer to another
+
+git config --global (for configuration files and for all projects)
+
+git checkout commit<ID> (This restores the system to the state
+of that commit...now even the git log shows nothing beyond this 
+commit)
+
+git config --global core.editor "subl -n -w"
+
+This opens sublime text in new window..subl is the new alias for sublime text..!!!
+
+-n signifies new window and -w signifies that no returning to 
+git contril unless you do not close the sublime text thing..!!
+
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+git show <commit>  It shows diff with its parent only :)
+
+To create a remote repository on the github(a public repository)
+
+if you already have a local repository, then dont create a README
+already before that.
+
+Command : git remote
+git remote add <remote_branch_name> <Url_of_github_repo>
+
+git remote -v (for verbose mode)->will output more information
+
+To push : 
+git push <remote> <local>
+
+
+to delete a branch...do git branch -d <branch-name>
+
+git merge finalbranch branchToBeMerged
+also checkout final branch before merge
+
+git merge --abort : To abort merge
+
+https://www.udacity.com/course/viewer#!/c-ud775/l-2980038599/e-2960778944/m-2960778947
+
+https://courses.edx.org/courses/LinuxFoundationX/LFS101x/2T2014/info
+
+http://www.ee.surrey.ac.uk/Teaching/Unix/unixintro.html
+
+http://msysgit.github.io/#contribute

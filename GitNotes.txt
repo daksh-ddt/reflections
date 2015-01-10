@@ -1,0 +1,93 @@
+
+Concept Map
+* Version control
+* commits
+* git diff
+* repository
+* git init
+* git add
+* git status
+* staging area
+* working directory
+* branching
+* merging
+
+
+command to compare : 
+
+Unix : diff -u oldFile newFile
+Windows : FC firstFile secondFile
+
+--- old file
++++ new file 
+- (for remove) not in the new version
++ (for add)    present in the new version
+
+First Topic : Seeing the differences between two files:
+Using FC in windows and diff in linux
+
+rm ---> for removing a particular file
+rm -r for removing the directory
+rm -rf for removing all the files inside also the directory
+
+mv file1 location/new_file_NAME
+if no location is given, then, you file is moved to the
+current directory
+
+scp -> The command to securely copy the files from one computer 
+to other.
+
+
+The user created checkpoints are called commits.
+
+Type of relationships
+Type-of and part-of, operates-on 
+
+
+Undoing the changes concepts:
+
+Checkout      
+it lets you to see the previous saved state without 
+alterning any other files or other commits.
+
+To return to the latest commit after checking out to something else, do "git checkout master"
+
+Revert
+git revert <commit>
+It undo all the changes introduced by that commit and then,
+it appends it as a new commit making the revision history 
+as it is..for better developmental approach.
+
+Reset
+git reset :
+It resets the state to the previous commit...then,
+no git log or history is possible...nothing..!!
+It is a permanent undo option...reverting is always
+preferred as reverting will then just undo that commit changes
+and make a new commit for them.
+
+Some syntax:
+git reset : It resets the staging area...remove all the add files,
+but leaves the working area unchanged
+
+git reset --hard : It resets the unstaging area to match the recent commit and then wipeout all changes from the working 
+directory too !!! It destroys all uncommitted changes !!!
+
+git reset <commit> : Moves back to that commit...but all changes are there in the working directory...now, you can make cleaner 
+commits.
+
+git reset --hard <commit> : Removes all commits and changes from after commit.
+
+git reset without the <commit> works on the staging area only. 
+
+Whereas reverting is designed to safely undo a public commit, git reset is designed to undo local changes
+
+Staging area...This means that if I commit as this moment, then
+these files would be committed :) Wow !!!
+
+git diff (more insight)!!
+When there is no arguments, it compares working directory and 
+staging area.
+
+git diff --staged
+Compared staging area and most recent commit in the repository

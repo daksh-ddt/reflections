@@ -1,0 +1,9 @@
+Proxy related links
+
+http://stackoverflow.com/questions/5529218/how-to-use-git-behind-a-proxy
+
+http://stackoverflow.com/questions/128035/how-do-i-pull-from-a-git-repository-through-an-http-proxy
+
+Reverting and undoing the old changes
+https://www.atlassian.com/git/tutorials/undoing-changes
+
