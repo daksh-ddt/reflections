@@ -1,3 +1,0 @@
-Q. What happens when you do a git init to a folder?
-A. It actually creates an empty repository with untracked files, not added to staging area,
-   but with no commits.
